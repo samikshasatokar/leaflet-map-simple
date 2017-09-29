@@ -66,11 +66,11 @@
       layer.bindPopup(feature.properties.Title);
     }
    });
-   var runLayer = omnivore.csv('data.csv', null, customLayer)
+   var runLayer = omnivore.csv('mynew.csv', null, customLayer)
    .on('ready', function() {
     map.fitBounds(runLayer.getBounds());
    }).addTo(map);
-   controlLayers.addOverlay(customLayer, 'Markers from data.csv');
+   controlLayers.addOverlay(customLayer, 'Markers from mynew.csv');
 
   </script>
 </body>
